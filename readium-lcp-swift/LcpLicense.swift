@@ -125,8 +125,7 @@ public class LcpLicense: DrmLicense {
         let database = LCPDatabase.shared
 
         // Check that no existing license with license.id are in the base.
-        guard let existingLicense = try? database.licenses.existingLicense(with: license.id),
-            !existingLicense else
+        guard let existingLicense = try? database.registerItems.existingRegister(for: license.id), !existingLicense else
         {
             return
         }
@@ -166,6 +165,7 @@ public class LcpLicense: DrmLicense {
                 //  5.3/ Store the fact the the device / license has been registered.
                 do {
                     try LCPDatabase.shared.licenses.insert(self.license, with: status.status)
+                    try LCPDatabase.shared.registerItems.insert(self.license, deviceNameString: deviceName, deviceIDString: deviceId)
                     return // SUCCESS
                 } catch {
                     print(error.localizedDescription)
@@ -419,6 +419,7 @@ public class LcpLicense: DrmLicense {
                 } else if let error = error {
                     print(error.localizedDescription)
                 }
+                // Keep this, because another insert (under register process) will not run if the book is already registered.
                 try? LCPDatabase.shared.licenses.insert(self.license, with: status.status)
                 fulfill()
             })
