@@ -21,6 +21,7 @@ final class LCPDatabase {
     /// Tables.
     let licenses: Licenses!
     let transactions: Transactions!
+    let registerItems: RegisterItems!
 
     private init() {
         do {
@@ -32,6 +33,7 @@ final class LCPDatabase {
             connection = try Connection(url.absoluteString)
             licenses = Licenses(connection)
             transactions = Transactions(connection)
+            registerItems = RegisterItems(connection)
         } catch {
             fatalError("Error initializing db.")
         }

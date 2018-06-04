@@ -7,7 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		03254C09206A7E41008C68ED /* R2LCPClient.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 03254C0A206A7E41008C68ED /* R2LCPClient.framework */; };
+		5747983B20B2F115000F2EDA /* RegisterItems.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5747983A20B2F115000F2EDA /* RegisterItems.swift */; };
+		5747983C20B4461F000F2EDA /* R2LCPClient.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F3314BF31FE42F2300C3B790 /* R2LCPClient.framework */; };
 		F331FBF81F8228F8007F16DF /* LCPDatabase.swift in Sources */ = {isa = PBXBuildFile; fileRef = F331FBF71F8228F8007F16DF /* LCPDatabase.swift */; };
 		F35AF9F91F6AB8C700D3F670 /* LcpSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = F35AF9F81F6AB8C700D3F670 /* LcpSession.swift */; };
 		F35AF9FF1F6ACD3900D3F670 /* LcpParsingError.swift in Sources */ = {isa = PBXBuildFile; fileRef = F35AF9FE1F6ACD3900D3F670 /* LcpParsingError.swift */; };
@@ -45,6 +46,7 @@
 
 /* Begin PBXFileReference section */
 		03254C0A206A7E41008C68ED /* R2LCPClient.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = R2LCPClient.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5747983A20B2F115000F2EDA /* RegisterItems.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterItems.swift; sourceTree = "<group>"; };
 		F300FA341F8E1AEB00442332 /* R2Shared.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = R2Shared.framework; path = Carthage/Build/iOS/R2Shared.framework; sourceTree = "<group>"; };
 		F3314BF31FE42F2300C3B790 /* R2LCPClient.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = R2LCPClient.framework; path = Carthage/Build/iOS/R2LCPClient.framework; sourceTree = "<group>"; };
 		F331FBF71F8228F8007F16DF /* LCPDatabase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LCPDatabase.swift; sourceTree = "<group>"; };
@@ -85,7 +87,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				03254C09206A7E41008C68ED /* R2LCPClient.framework in Frameworks */,
+				5747983C20B4461F000F2EDA /* R2LCPClient.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -105,6 +107,7 @@
 			children = (
 				F36F9E251F826C17001D0DB4 /* Licenses.swift */,
 				F36F9E271F8270FC001D0DB4 /* Transactions.swift */,
+				5747983A20B2F115000F2EDA /* RegisterItems.swift */,
 			);
 			name = Tables;
 			sourceTree = "<group>";
@@ -330,7 +333,7 @@
 /* Begin PBXShellScriptBuildPhase section */
 		03EF7670206A7D6B00C3C24E /* carthage run script */ = {
 			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
+			buildActionMask = 12;
 			files = (
 			);
 			inputPaths = (
@@ -341,6 +344,7 @@
 				"$(SRCROOT)/Carthage/Build/iOS/SQLite.framework",
 				"$(SRCROOT)/Carthage/Build/iOS/SwiftyJSON.framework",
 				"$(SRCROOT)/Carthage/Build/iOS/ZIPFoundation.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/R2LCPClient.framework",
 			);
 			name = "carthage run script";
 			outputPaths = (
@@ -376,6 +380,7 @@
 				F3B2C8AC1F66727C007601E4 /* Link.swift in Sources */,
 				F38FB03E1F66840900F9D602 /* ContentKey.swift in Sources */,
 				F331FBF81F8228F8007F16DF /* LCPDatabase.swift in Sources */,
+				5747983B20B2F115000F2EDA /* RegisterItems.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -502,6 +507,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
+				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				TARGETED_DEVICE_FAMILY = "1,2";
