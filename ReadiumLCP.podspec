@@ -15,8 +15,7 @@ Pod::Spec.new do |s|
   s.ios.deployment_target = "10.0"
   s.xcconfig      = { 'HEADER_SEARCH_PATHS' => '$(SDKROOT)/usr/include/libxml2'}
   
-  s.dependency 'R2Shared'
-  s.dependency 'R2LCPClient'
+  s.dependency 'R2Shared' 
 
   s.dependency 'ZIPFoundation'
   s.dependency 'SQLite.swift'
