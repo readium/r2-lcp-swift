@@ -21,12 +21,6 @@
 		CA4A388E220988C800599297 /* LCPLLicenseContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA4A388D220988C800599297 /* LCPLLicenseContainer.swift */; };
 		CA4A389022098A9400599297 /* ZIPLicenseContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA4A388F22098A9400599297 /* ZIPLicenseContainer.swift */; };
 		CA4A3892220994E300599297 /* EPUBLicenseContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA4A3891220994E300599297 /* EPUBLicenseContainer.swift */; };
-		CA4CF4A325CDA7A7005DD935 /* CryptoSwift.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = CA4CF47B25CDA636005DD935 /* CryptoSwift.xcframework */; };
-		CA4CF4A425CDA7A7005DD935 /* Fuzi.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = CA4CF47C25CDA636005DD935 /* Fuzi.xcframework */; };
-		CA4CF4A525CDA7A7005DD935 /* Minizip.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = CA4CF47A25CDA636005DD935 /* Minizip.xcframework */; };
-		CA4CF4A625CDA7A7005DD935 /* R2Shared.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = CA4CF47D25CDA636005DD935 /* R2Shared.xcframework */; };
-		CA4CF4A725CDA7A7005DD935 /* SQLite.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = CA4CF47825CDA636005DD935 /* SQLite.xcframework */; };
-		CA4CF4A825CDA7A7005DD935 /* ZIPFoundation.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = CA4CF47925CDA636005DD935 /* ZIPFoundation.xcframework */; };
 		CA4CF4B425CDA7D9005DD935 /* CryptoSwift.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = CA4CF47B25CDA636005DD935 /* CryptoSwift.xcframework */; };
 		CA4CF4B525CDA7D9005DD935 /* Fuzi.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = CA4CF47C25CDA636005DD935 /* Fuzi.xcframework */; };
 		CA4CF4B625CDA7D9005DD935 /* Minizip.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = CA4CF47A25CDA636005DD935 /* Minizip.xcframework */; };
@@ -45,6 +39,10 @@
 		CA6CF1CD2528CB830025BBB2 /* LCPPassphraseAuthentication.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA6CF1CC2528CB830025BBB2 /* LCPPassphraseAuthentication.swift */; };
 		CA6CF1E52528CC8E0025BBB2 /* LCPDialogViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA6CF1E12528CC8E0025BBB2 /* LCPDialogViewController.swift */; };
 		CA6CF1ED2528CC9A0025BBB2 /* LCPDialogViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CA6CF1EB2528CC9A0025BBB2 /* LCPDialogViewController.xib */; };
+		CA7B77AF263AB90800260838 /* R2Shared.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CA7B77AE263AB90800260838 /* R2Shared.framework */; };
+		CA7B77B3263AB91400260838 /* SQLite.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CA7B77B2263AB91400260838 /* SQLite.framework */; };
+		CA7B77B6263AB91700260838 /* CryptoSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CA7B77B5263AB91700260838 /* CryptoSwift.framework */; };
+		CA7B77B9263AB91D00260838 /* ZIPFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CA7B77B8263AB91D00260838 /* ZIPFoundation.framework */; };
 		CA9428FD22B9442300305CDB /* ReadiumLicenseContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA9428FC22B9442300305CDB /* ReadiumLicenseContainer.swift */; };
 		CAB131F6220D81E60097DFB5 /* LicensesRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAB131F5220D81E60097DFB5 /* LicensesRepository.swift */; };
 		CAB1320B220D9B200097DFB5 /* LCPService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAB1320A220D9B200097DFB5 /* LCPService.swift */; };
@@ -123,6 +121,10 @@
 		CA6CF1CC2528CB830025BBB2 /* LCPPassphraseAuthentication.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LCPPassphraseAuthentication.swift; sourceTree = "<group>"; };
 		CA6CF1E12528CC8E0025BBB2 /* LCPDialogViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LCPDialogViewController.swift; sourceTree = "<group>"; };
 		CA6CF1EC2528CC9A0025BBB2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LCPDialogViewController.xib; sourceTree = "<group>"; };
+		CA7B77AE263AB90800260838 /* R2Shared.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = R2Shared.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CA7B77B2263AB91400260838 /* SQLite.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = SQLite.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CA7B77B5263AB91700260838 /* CryptoSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = CryptoSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CA7B77B8263AB91D00260838 /* ZIPFoundation.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = ZIPFoundation.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CA9428FC22B9442300305CDB /* ReadiumLicenseContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReadiumLicenseContainer.swift; sourceTree = "<group>"; };
 		CAB131F5220D81E60097DFB5 /* LicensesRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LicensesRepository.swift; sourceTree = "<group>"; };
 		CAB1320A220D9B200097DFB5 /* LCPService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LCPService.swift; sourceTree = "<group>"; };
@@ -177,12 +179,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CA4CF4A325CDA7A7005DD935 /* CryptoSwift.xcframework in Frameworks */,
-				CA4CF4A425CDA7A7005DD935 /* Fuzi.xcframework in Frameworks */,
-				CA4CF4A525CDA7A7005DD935 /* Minizip.xcframework in Frameworks */,
-				CA4CF4A625CDA7A7005DD935 /* R2Shared.xcframework in Frameworks */,
-				CA4CF4A725CDA7A7005DD935 /* SQLite.xcframework in Frameworks */,
-				CA4CF4A825CDA7A7005DD935 /* ZIPFoundation.xcframework in Frameworks */,
+				CA7B77B6263AB91700260838 /* CryptoSwift.framework in Frameworks */,
+				CA7B77B9263AB91D00260838 /* ZIPFoundation.framework in Frameworks */,
+				CA7B77B3263AB91400260838 /* SQLite.framework in Frameworks */,
+				CA7B77AF263AB90800260838 /* R2Shared.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -388,6 +388,10 @@
 		F3B2C8AD1F6672E1007601E4 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				CA7B77B8263AB91D00260838 /* ZIPFoundation.framework */,
+				CA7B77B5263AB91700260838 /* CryptoSwift.framework */,
+				CA7B77B2263AB91400260838 /* SQLite.framework */,
+				CA7B77AE263AB90800260838 /* R2Shared.framework */,
 				CA4CF47B25CDA636005DD935 /* CryptoSwift.xcframework */,
 				CA4CF47C25CDA636005DD935 /* Fuzi.xcframework */,
 				CA4CF47A25CDA636005DD935 /* Minizip.xcframework */,
