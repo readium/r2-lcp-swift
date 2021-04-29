@@ -21,12 +21,6 @@
 		CA4A388E220988C800599297 /* LCPLLicenseContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA4A388D220988C800599297 /* LCPLLicenseContainer.swift */; };
 		CA4A389022098A9400599297 /* ZIPLicenseContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA4A388F22098A9400599297 /* ZIPLicenseContainer.swift */; };
 		CA4A3892220994E300599297 /* EPUBLicenseContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA4A3891220994E300599297 /* EPUBLicenseContainer.swift */; };
-		CA4CF4B425CDA7D9005DD935 /* CryptoSwift.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = CA4CF47B25CDA636005DD935 /* CryptoSwift.xcframework */; };
-		CA4CF4B525CDA7D9005DD935 /* Fuzi.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = CA4CF47C25CDA636005DD935 /* Fuzi.xcframework */; };
-		CA4CF4B625CDA7D9005DD935 /* Minizip.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = CA4CF47A25CDA636005DD935 /* Minizip.xcframework */; };
-		CA4CF4B725CDA7D9005DD935 /* R2Shared.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = CA4CF47D25CDA636005DD935 /* R2Shared.xcframework */; };
-		CA4CF4B825CDA7D9005DD935 /* SQLite.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = CA4CF47825CDA636005DD935 /* SQLite.xcframework */; };
-		CA4CF4B925CDA7D9005DD935 /* ZIPFoundation.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = CA4CF47925CDA636005DD935 /* ZIPFoundation.xcframework */; };
 		CA50B88022B2A777003AFF24 /* R2LCPLocalizedString.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA50B87F22B2A777003AFF24 /* R2LCPLocalizedString.swift */; };
 		CA50B88422B2A822003AFF24 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = CA50B88622B2A822003AFF24 /* Localizable.strings */; };
 		CA5A5E0A25208F1B00CF1CCE /* ReadiumLCP.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F3B2C8871F667222007601E4 /* ReadiumLCP.framework */; platformFilter = ios; };
@@ -101,12 +95,6 @@
 		CA4A388D220988C800599297 /* LCPLLicenseContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LCPLLicenseContainer.swift; sourceTree = "<group>"; };
 		CA4A388F22098A9400599297 /* ZIPLicenseContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZIPLicenseContainer.swift; sourceTree = "<group>"; };
 		CA4A3891220994E300599297 /* EPUBLicenseContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EPUBLicenseContainer.swift; sourceTree = "<group>"; };
-		CA4CF47825CDA636005DD935 /* SQLite.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = SQLite.xcframework; path = Carthage/Build/SQLite.xcframework; sourceTree = "<group>"; };
-		CA4CF47925CDA636005DD935 /* ZIPFoundation.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = ZIPFoundation.xcframework; path = Carthage/Build/ZIPFoundation.xcframework; sourceTree = "<group>"; };
-		CA4CF47A25CDA636005DD935 /* Minizip.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = Minizip.xcframework; path = Carthage/Build/Minizip.xcframework; sourceTree = "<group>"; };
-		CA4CF47B25CDA636005DD935 /* CryptoSwift.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = CryptoSwift.xcframework; path = Carthage/Build/CryptoSwift.xcframework; sourceTree = "<group>"; };
-		CA4CF47C25CDA636005DD935 /* Fuzi.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = Fuzi.xcframework; path = Carthage/Build/Fuzi.xcframework; sourceTree = "<group>"; };
-		CA4CF47D25CDA636005DD935 /* R2Shared.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = R2Shared.xcframework; path = Carthage/Build/R2Shared.xcframework; sourceTree = "<group>"; };
 		CA50B87F22B2A777003AFF24 /* R2LCPLocalizedString.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = R2LCPLocalizedString.swift; sourceTree = "<group>"; };
 		CA50B88522B2A822003AFF24 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		CA5A5E0525208F1B00CF1CCE /* readium-lcp-swiftTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "readium-lcp-swiftTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -166,12 +154,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				CA5A5E0A25208F1B00CF1CCE /* ReadiumLCP.framework in Frameworks */,
-				CA4CF4B425CDA7D9005DD935 /* CryptoSwift.xcframework in Frameworks */,
-				CA4CF4B525CDA7D9005DD935 /* Fuzi.xcframework in Frameworks */,
-				CA4CF4B625CDA7D9005DD935 /* Minizip.xcframework in Frameworks */,
-				CA4CF4B725CDA7D9005DD935 /* R2Shared.xcframework in Frameworks */,
-				CA4CF4B825CDA7D9005DD935 /* SQLite.xcframework in Frameworks */,
-				CA4CF4B925CDA7D9005DD935 /* ZIPFoundation.xcframework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -392,12 +374,6 @@
 				CA7B77B5263AB91700260838 /* CryptoSwift.framework */,
 				CA7B77B2263AB91400260838 /* SQLite.framework */,
 				CA7B77AE263AB90800260838 /* R2Shared.framework */,
-				CA4CF47B25CDA636005DD935 /* CryptoSwift.xcframework */,
-				CA4CF47C25CDA636005DD935 /* Fuzi.xcframework */,
-				CA4CF47A25CDA636005DD935 /* Minizip.xcframework */,
-				CA4CF47D25CDA636005DD935 /* R2Shared.xcframework */,
-				CA4CF47825CDA636005DD935 /* SQLite.xcframework */,
-				CA4CF47925CDA636005DD935 /* ZIPFoundation.xcframework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
