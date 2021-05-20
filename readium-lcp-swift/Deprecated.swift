@@ -38,13 +38,13 @@ final public class LcpLicense {
     @available(*, unavailable, message: "Replace all the LCP code in `publication(at:)` by `LCPService.importPublication` (see `LCPLibraryService.fulfill` in the latest version)")
     public init(withLicenseDocumentAt url: URL) throws {}
     
-    @available(*, deprecated)
+    @available(*, unavailable)
     public init(withLicenseDocumentIn url: URL) throws {}
     
-    @available(*, deprecated, message: "Removing the LCP license is not needed anymore, delete the LCP-related code in `remove(publication:)`")
+    @available(*, unavailable, message: "Removing the LCP license is not needed anymore, delete the LCP-related code in `remove(publication:)`")
     public func removeDataBaseItem() throws {}
     
-    @available(*, deprecated, message: "Removing the LCP license is not needed anymore, delete the LCP-related code in `remove(publication:)`")
+    @available(*, unavailable, message: "Removing the LCP license is not needed anymore, delete the LCP-related code in `remove(publication:)`")
     public static func removeDataBaseItem(licenseID: String) throws {}
 
 }
@@ -53,5 +53,5 @@ final public class LcpLicense {
 @available(*, unavailable, message: "Remove `promptPassphrase` and implement the protocol `LCPAuthenticating` instead (see LCPLibraryService in the latest version)")
 public enum LcpError: Error {}
 
-@available(*, deprecated, renamed: "LCPAcquisition.Publication")
+@available(*, unavailable, renamed: "LCPAcquisition.Publication")
 public typealias LCPImportedPublication = LCPAcquisition.Publication
