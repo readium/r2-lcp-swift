@@ -11,12 +11,12 @@ public extension LCPService {
 
     /// Imports a protected publication from a standalone LCPL file.
     @available(*, unavailable, message: "Use `acquirePublication()` instead", renamed: "acquirePublication")
-    func importPublication(from lcpl: URL, authentication: LCPAuthenticating?, sender: Any?, completion: @escaping (CancellableResult<LCPAcquisition.Publication, LCPError>) -> Void) -> Observable<DownloadProgress> {
+    func importPublication(from lcpl: URL, authentication: LCPAuthenticating?, sender: Any?, completion: @escaping (CancellableResult<LCPAcquisition.Publication, LCPError>) -> Void) -> Observable<Float> {
         fatalError("Not available anymore")
     }
     
     @available(*, unavailable, message: "Use `acquirePublication()` instead", renamed: "acquirePublication")
-    func importPublication(from lcpl: URL, authentication: LCPAuthenticating?, completion: @escaping (CancellableResult<LCPAcquisition.Publication, LCPError>) -> Void) -> Observable<DownloadProgress> {
+    func importPublication(from lcpl: URL, authentication: LCPAuthenticating?, completion: @escaping (CancellableResult<LCPAcquisition.Publication, LCPError>) -> Void) -> Observable<Float> {
         fatalError("Not available anymore")
     }
     
