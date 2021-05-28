@@ -6,10 +6,10 @@ Pod::Spec.new do |s|
   s.summary       = "Readium LCP"
   s.homepage      = "http://readium.github.io"
   s.author        = { "Aferdita Muriqi" => "aferdita.muriqi@gmail.com" }
-  s.source        = { :git => "https://github.com/readium/r2-lcp-swift.git", :branch => "develop" }
+  s.source        = { :git => "https://github.com/openm1nd/r2-lcp-swift.git", :branch => "develop" }
   s.exclude_files = ["**/Info*.plist"]
   s.requires_arc  = true
-  s.resources     = ['readium-lcp-swift/Resources/**']
+  s.resources     = ['readium-lcp-swift/Resources/**', 'readium-lcp-swift/**/*.{storyboard,xib,xcassets}']
   s.source_files  = "readium-lcp-swift/**/*.{m,h,swift}"
   s.platform      = :ios
   s.ios.deployment_target = "10.0"
