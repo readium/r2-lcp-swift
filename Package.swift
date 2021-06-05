@@ -17,7 +17,7 @@ let package = Package(
         .package(url: "https://github.com/stephencelis/SQLite.swift.git", .exact("0.12.2")),
         .package(url: "https://github.com/krzyzanowskim/CryptoSwift.git", .exact("1.3.8")),
         .package(url: "https://github.com/weichsel/ZIPFoundation.git", .exact("0.9.11")),
-        .package(name: "R2Shared", path: "../r2-shared-swift")
+        .package(name: "R2Shared", url: "https://github.com/stevenzeck/r2-shared-swift.git", .branch("use-spm"))
     ],
     targets: [
         // Targets are the basic building blocks of a package. A target can define a module or a test suite.
