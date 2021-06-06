@@ -21,10 +21,10 @@
       },
       {
         "package": "R2Shared",
-        "repositoryURL": "https://github.com/stevenzeck/r2-shared-swift.git",
+        "repositoryURL": "https://github.com/readium/r2-shared-swift.git",
         "state": {
-          "branch": "use-spm",
-          "revision": "977ca70807d27ff31d939f64da4d63089aa9827a",
+          "branch": "develop",
+          "revision": "b668bae51ae45e1b58a204771bb7ea080a17f6d8",
           "version": null
         }
       },
@@ -35,6 +35,15 @@
           "branch": null,
           "revision": "0a9893ec030501a3956bee572d6b4fdd3ae158a1",
           "version": "0.12.2"
+        }
+      },
+      {
+        "package": "SwiftSoup",
+        "repositoryURL": "https://github.com/scinfu/SwiftSoup",
+        "state": {
+          "branch": null,
+          "revision": "774dc9c7213085db8aa59595e27c1cd22e428904",
+          "version": "2.3.2"
         }
       },
       {
