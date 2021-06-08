@@ -13,38 +13,40 @@ let package = Package(
     platforms: [.iOS(.v10)],
     products: [
         .library(
-            name: "R2LCPClient",
-            targets: ["R2LCPClient"]),
+            name: "ReadiumLCP",
+            targets: ["ReadiumLCP"]),
     ],
     dependencies: [
-        .package(url: "https://github.com/stephencelis/SQLite.swift.git", from: "0.12.2"),
         .package(url: "https://github.com/krzyzanowskim/CryptoSwift.git", from: "1.3.8"),
-        .package(url: "https://github.com/weichsel/ZIPFoundation.git", .exact("0.9.11")),
         .package(url: "https://github.com/readium/r2-shared-swift.git", .branch("develop")),
+        .package(url: "https://github.com/stephencelis/SQLite.swift.git", from: "0.12.2"),
+        .package(url: "https://github.com/weichsel/ZIPFoundation.git", from: "0.9.11"),
     ],
     targets: [
         .target(
-            name: "R2LCPClient",
+            name: "ReadiumLCP",
             dependencies: [
-                .product(name: "SQLite", package: "SQLite.swift"),
-                .product(name: "R2Shared", package: "r2-shared-swift"),
                 "CryptoSwift",
                 "ZIPFoundation",
+                .product(name: "R2Shared", package: "r2-shared-swift"),
+                .product(name: "SQLite", package: "SQLite.swift"),
             ],
             path: "./readium-lcp-swift/",
             exclude: ["Info.plist"],
             resources: [
-                .copy("Resources")
+                .process("Resources")
             ]
         ),
-        .testTarget(
-            name: "R2LCPTests",
-            dependencies: ["R2LCPClient"],
-            path: "./readium-lcp-swiftTests/",
-            exclude: ["Info.plist"],
-            resources: [
-                .copy("Fixtures")
-            ]
-        )
+        // The test target depends on R2LCPClient.framework.
+        // Couldn't find a way to link to it unless it is wrapped in a XCFramework.
+        // .testTarget(
+        //     name: "ReadiumLCPTests",
+        //     dependencies: ["ReadiumLCP"],
+        //     path: "./readium-lcp-swiftTests/",
+        //     exclude: ["Info.plist"],
+        //     resources: [
+        //         .copy("Fixtures")
+        //     ]
+        // )
     ]
 )
