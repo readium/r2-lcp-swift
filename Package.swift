@@ -8,7 +8,7 @@
 import PackageDescription
 
 let package = Package(
-    name: "R2LCPClient",
+    name: "r2-lcp-swift",
     defaultLocalization: "en",
     platforms: [.iOS(.v10)],
     products: [
@@ -17,15 +17,20 @@ let package = Package(
             targets: ["R2LCPClient"]),
     ],
     dependencies: [
-        .package(url: "https://github.com/stephencelis/SQLite.swift.git", .exact("0.12.2")),
-        .package(url: "https://github.com/krzyzanowskim/CryptoSwift.git", .exact("1.3.8")),
+        .package(url: "https://github.com/stephencelis/SQLite.swift.git", from: "0.12.2"),
+        .package(url: "https://github.com/krzyzanowskim/CryptoSwift.git", from: "1.3.8"),
         .package(url: "https://github.com/weichsel/ZIPFoundation.git", .exact("0.9.11")),
-        .package(name: "R2Shared", url: "https://github.com/readium/r2-shared-swift.git", .branch("develop")),
+        .package(url: "https://github.com/readium/r2-shared-swift.git", .branch("develop")),
     ],
     targets: [
         .target(
             name: "R2LCPClient",
-            dependencies: [.product(name: "SQLite", package: "SQLite.swift"), "CryptoSwift", "ZIPFoundation", "R2Shared"],
+            dependencies: [
+                .product(name: "SQLite", package: "SQLite.swift"),
+                .product(name: "R2Shared", package: "r2-shared-swift"),
+                "CryptoSwift",
+                "ZIPFoundation",
+            ],
             path: "./readium-lcp-swift/",
             exclude: ["Info.plist"],
             resources: [
@@ -33,7 +38,7 @@ let package = Package(
             ]
         ),
         .testTarget(
-            name: "r2-lcp-swiftTests",
+            name: "R2LCPTests",
             dependencies: ["R2LCPClient"],
             path: "./readium-lcp-swiftTests/",
             exclude: ["Info.plist"],
