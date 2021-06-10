@@ -25,7 +25,8 @@ jobs:
         run: |
           device=`xcrun xctrace list devices 2>&1 | grep -oE 'iPhone.*?[^\(]+' | head -1 | awk '{$1=$1;print}'`
           xcodebuild build-for-testing -scheme "$scheme" -destination "platform=$platform,name=$device"
-      - name: Test
-        run: |
-          device=`xcrun xctrace list devices 2>&1 | grep -oE 'iPhone.*?[^\(]+' | head -1 | awk '{$1=$1;print}'`
-          xcodebuild test-without-building -scheme "$scheme" -destination "platform=$platform,name=$device"
+      # Tests require R2LCPClient.framework which is private.
+      # - name: Test
+      #   run: |
+      #     device=`xcrun xctrace list devices 2>&1 | grep -oE 'iPhone.*?[^\(]+' | head -1 | awk '{$1=$1;print}'`
+      #     xcodebuild test-without-building -scheme "$scheme" -destination "platform=$platform,name=$device"
