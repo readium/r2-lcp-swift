@@ -2,7 +2,7 @@ name: r2-lcp-swift
 options:
   bundleIdPrefix: org.readium
 targets:
-  r2-lcp-swift:
+  ReadiumLCP:
     type: framework
     platform: iOS
     deploymentTarget: "10.0"
@@ -16,5 +16,10 @@ targets:
       - framework: Carthage/Build/SQLite.xcframework
       - framework: Carthage/Build/ZIPFoundation.xcframework
     settings:
-      PRODUCT_NAME: ReadiumLCP
+      PRODUCT_BUNDLE_IDENTIFIER: org.readium.readium-lcp-swift
       LIBRARY_SEARCH_PATHS: $(PROJECT_DIR)/Carthage
+schemes:
+  r2-lcp-swift:
+    build:
+      targets:
+        ReadiumLCP: all
