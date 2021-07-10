@@ -1,0 +1,19 @@
+name: r2-lcp-swift
+options:
+  bundleIdPrefix: org.readium
+targets:
+  r2-lcp-swift:
+    type: framework
+    platform: iOS
+    deploymentTarget: "10.0"
+    sources: 
+      - path: readium-lcp-swift
+    dependencies:
+      - framework: CryptoSwift.framework
+      - framework: Fuzi.framework
+      - framework: Minizip.framework
+      - framework: R2Shared.framework
+      - framework: SQLite.framework
+      - framework: ZIPFoundation.framework
+    settings:
+      PRODUCT_NAME: ReadiumLCP
