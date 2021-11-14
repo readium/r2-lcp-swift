@@ -1,3 +1,7 @@
+> **:warning: ᴛʜɪs ʀᴇᴘᴏsɪᴛᴏʀʏ ɪs ᴅᴇᴘʀᴇᴄᴀᴛᴇᴅ :warning:**
+>
+> We moved all the `r2-*-swift` modules to a single repository: [`swift-toolkit`](https://github.com/readium/swift-toolkit).
+
 # r2-lcp-swift
 
 Swift wrapper module for LCP support
